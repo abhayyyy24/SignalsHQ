@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter, Plus_Jakarta_Sans, Montserrat } from "next/font/google";
 import Navbar from "./components/layout/Navbar";
 import "./globals.css";
+import CTA from "./components/sections/CTA";
+import Footer from "./components/layout/Footer";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-body", display: "swap" });
 const plusJakarta = Plus_Jakarta_Sans({
@@ -28,6 +30,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <body className={`${inter.variable} ${plusJakarta.variable} ${montserrat.variable} font-body antialiased`}>
         <Navbar />
         {children}
+        <CTA/>
+        <Footer/>
       </body>
     </html>
   );

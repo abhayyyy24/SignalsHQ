@@ -6,7 +6,6 @@ export default function ContactPage() {
   return (
     <main className="min-h-screen bg-background pt-20">
       <ContactForm />
-      <Footer />
     </main>
   );
 }
