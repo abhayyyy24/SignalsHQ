@@ -1,4 +1,3 @@
-import Navbar from "./components/layout/Navbar";
 import Hero from "./components/sections/Hero";
 import ProductShowcase from "./components/sections/ProductShowcase";
 import Features from "./components/sections/Features"
